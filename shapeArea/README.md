@@ -1,4 +1,4 @@
-##Proposta de exercício
+#Proposta de exercício
 
 Below we will define an `n`-interesting polygon. Your task is to find the area of a polygon for a given n.
 
