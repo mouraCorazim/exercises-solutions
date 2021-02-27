@@ -1,4 +1,4 @@
-##Common character count
+# Common character count
 
 Given two strings, find the number of common characters between them.
 
