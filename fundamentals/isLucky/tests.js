@@ -1,4 +1,4 @@
-const assert = require('../assert.js')
+const {assert} = require('../../assert.js')
 const isLucky = require('./isLucky.js')
 
 const testName = "isLucky: "
