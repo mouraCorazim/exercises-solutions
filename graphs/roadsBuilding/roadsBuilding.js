@@ -13,20 +13,20 @@ function makeSquareMatrixFillWith(length, content){
 }
 
 module.exports = (cities, roads) => {
-  const matrix = makeSquareMatrixFillWith(cities, 0)
+  const matrix = makeSquareMatrixFillWith(cities, true)
   const roadsToBuild = []
   
   for(let i = 0; i < roads.length; i++){
     const j = roads[i][0]
     const k = roads[i][1]
     
-    matrix[j][k] = 1
-    matrix[k][j] = 1
+    matrix[j][k] = false
+    matrix[k][j] = false
   }
   
   for(let i = 1; i < cities; i++){
     for(let j = 0; j < i; j++){
-      if(matrix[i][j] === 0){
+      if(matrix[i][j]){
           roadsToBuild.push([j, i])
       }
     }
